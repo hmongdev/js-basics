@@ -2,6 +2,7 @@
 concepts: for loop, variables, decrement, and control flow */
 
 //for loop is easier to use than while loop
+count = 99;
 for (i = 99; i > 1; i--) {
     if (i > 1) {
         console.log(count + " bottles of beer on the wall, " + count + " bottles of beer. Take one down, pass it around, ");
