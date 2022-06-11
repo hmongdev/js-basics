@@ -16,7 +16,7 @@ const greenAvenger = {
     Weight: '1,400 lbs',
     'Who Am I?': 'The Hulk',
     Green: true,
-    hulkSmash(){
+    hulkSmash() {
       console.log('HULK SMASHHHH!');
     }
   })
@@ -28,5 +28,14 @@ console.log(greenAvenger);
 // const person = { name: 'John Doe', salary: 1000 };
 // console.log('salary' in person); // returns true
 // console.log('age' in person); // returns false
-console.log(`Does \'Age\' exist in greenAvenger:`,'Age' in greenAvenger); //true
-console.log(`Does \'Green\' exist in greenAvenger:`,'green' in greenAvenger); //false
+console.log(`Does \'Age\' exist in greenAvenger:`, 'Age' in greenAvenger); //true
+console.log(`Does \'Green\' exist in greenAvenger:`, 'green' in greenAvenger); //false
+
+// 3. Dynamic Property Names in Objects
+const dynamic = 'flavour';
+let item = {
+  name: 'Biscuit',
+  [dynamic]: 'Chocolate'
+}
+console.log(item); // { name: 'Biscuit', flavour: 'Chocolate' }
+
