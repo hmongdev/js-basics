@@ -3,7 +3,7 @@
 // 1. Conditionally Add Properties to Object
 //  ...(condition && {prop: value})
 
-const angry = true //false
+let angry = false //false
 let color = 'Green'
 
 const greenAvenger = {
@@ -53,4 +53,14 @@ console.log(greenAvenger); // [color: 'green']
 // const { name: personName } = person;
 // console.log(personName); // returns 'John Doe'
 const { Age: number } = greenAvenger;
-console.log(number); //49, if angry is false //13, if angry is true
+console.log(`greenAvenger is`, number, `years old`); //49, if angry is false //13, if angry is true
+
+// Destructuring with a Dynamic Key:
+
+// const templates = {
+//   'hello': 'Hello there',
+//   'bye': 'Good bye'
+// };
+// const templateName = 'bye';
+// const { [templateName]: template } = templates;
+// console.log(template) // returns 'Good bye'
