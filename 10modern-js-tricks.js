@@ -2,20 +2,21 @@
 
 // 1. Conditionally Add Properties to Object - Spread Operator
 const angry = true //false
+let color = 'Green'
 
 const greenAvenger = {
   Age: 49,
   Height: '5\'9',
   Weight: '128lbs',
   'Who Am I?': 'Bruce Banner, M.D., Ph.D.',
-  Green: false,
+  [color]: false,
 
   ...(angry && {
     Age: 13,
     Height: '7\'8\'',
     Weight: '1,400 lbs',
     'Who Am I?': 'The Hulk',
-    Green: true,
+    [color]: true,
     hulkSmash() {
       console.log('HULK SMASHHHH!');
     }
@@ -32,10 +33,12 @@ console.log(`Does \'Age\' exist in greenAvenger:`, 'Age' in greenAvenger); //tru
 console.log(`Does \'Green\' exist in greenAvenger:`, 'green' in greenAvenger); //false
 
 // 3. Dynamic Property Names in Objects
-const dynamic = 'flavour';
-let item = {
-  name: 'Biscuit',
-  [dynamic]: 'Chocolate'
-}
-console.log(item); // { name: 'Biscuit', flavour: 'Chocolate' }
+// const dynamic = 'flavour';
+// let item = {
+//   name: 'Biscuit',
+//   [dynamic]: 'Chocolate'
+// }
+// console.log(item); // { name: 'Biscuit', flavour: 'Chocolate' }
+console.log(greenAvenger); // [color: 'green']
+
 
