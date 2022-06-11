@@ -75,9 +75,14 @@ console.log(`greenAvenger is`, number, `years old`); //49, if angry is false //1
 // 5. Nullish Coalescing, ?? Operator
 // The ?? operator is useful when you want to check whether a variable is null or undefined. It returns the right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
 
-const foo = null ? ? 'Hello';
+const foo = null ?? 'Hello';
 console.log(foo); // returns 'Hello'
-const bar = 'Not null' ? ? 'Hello';
+
+const qux = undefined ?? 'World';
+console.log(qux); // returns 'World'
+
+const bar = 'Not null' ?? 'Hello';
 console.log(bar); // returns 'Not null'
-const baz = 0 ? ? 'Hello';
+
+const baz = 0 ?? 'Hello';
 console.log(baz); // returns 0
