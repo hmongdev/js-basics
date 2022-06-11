@@ -45,10 +45,12 @@ console.log(`Does \'Green\' exist in greenAvenger:`, 'green' in greenAvenger); /
 console.log(greenAvenger); // [color: 'green']
 
 // 4. Object Destructuring With a Dynamic Key
+
 // const {prop: value} = obj
+// console.log(value);
 
 // const person = { id: 1, name: 'John Doe' };
 // const { name: personName } = person;
 // console.log(personName); // returns 'John Doe'
-const { Age: number  } = greenAvenger;
+const { Age: number } = greenAvenger;
 console.log(number); //49, if angry is false //13, if angry is true
